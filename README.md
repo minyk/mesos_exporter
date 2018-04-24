@@ -4,6 +4,12 @@
 
 Exporter for Mesos master and agent metrics.
 
+## Build
+
+```sh
+$ docker run -it --rm -v $(PWD):/go/src/github.com/mesosphere/mesos_exporter -w /go/src/github.com/mesosphere/mesos_exporter golang:1.10.1 make build
+```
+
 ## Using
 The Mesos Exporter can either expose cluster wide metrics from a master or task
 metrics from an agent.

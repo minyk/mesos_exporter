@@ -203,9 +203,9 @@ func main() {
 			func(c *httpClient) prometheus.Collector {
 				return newSlaveCollector(c)
 			},
-			func(c *httpClient) prometheus.Collector {
-				return newSlaveMonitorCollector(c)
-			},
+			//			func(c *httpClient) prometheus.Collector {
+			//				return newSlaveMonitorCollector(c)
+			//			},
 			func(c *httpClient) prometheus.Collector {
 				return newSlaveStateCollector(c, slaveTaskLabels, slaveAttributeLabels)
 			},
